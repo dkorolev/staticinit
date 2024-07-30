@@ -2,7 +2,13 @@
 
 set -e
 
-make
+if ! make ; then
+  echo
+  echo "MAKE FAILED"
+  echo
+  cat CMakeLists.txt
+  exit 1
+fi
 
 S=""
 for i in $(./.current_debug/main | sort) ; do S="$S $i" ; done
