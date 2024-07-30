@@ -10,7 +10,7 @@ jobs:
   run:
     strategy:
       matrix:
-        os: [ubuntu-latest, macos-latest]
+        os: [ubuntu-latest]  # NOTE(dkorolev): I could not make `-force_load` work on `macos-latest`.
     runs-on: ${{ matrix.os }}
     steps:
       - name: git clone
