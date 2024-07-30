@@ -2,9 +2,11 @@
 
 set -e
 
+rm -f CMakeLists.txt
+
 if ! make ; then
   echo
-  echo "MAKE FAILED 2"
+  echo "MAKE FAILED"
   echo
   cat CMakeLists.txt
   exit 1
