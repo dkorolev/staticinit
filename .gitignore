@@ -1,0 +1,7 @@
+CMakeLists.txt
+
+current 
+googletest
+
+.current/
+.current_debug/
