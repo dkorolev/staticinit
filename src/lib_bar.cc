@@ -3,7 +3,7 @@
 #include "lib_bar.h"
 
 Bar::Bar() {
-  std::cout << "Bar()" << std::endl;
+  std::cout << "bar0" << std::endl;
 }
 
 Bar bar;

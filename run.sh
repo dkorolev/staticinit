@@ -9,9 +9,9 @@ for i in $(./.current_debug/main | sort) ; do S="$S $i" ; done
 
 echo "Result: ${S:1}"
 
-GOLDEN='Bar() bar1=1 bar2=2 Foo() main()'
+GOLDEN='bar0 bar1=1 bar2=2 foo0 main'
 
-if [ "${S:1}" == 'Bar() bar1=1 bar2=2 Foo() main()' ] ; then
+if [ "${S:1}" == "$GOLDEN" ] ; then
   echo "Test: PASSED"
 else
   echo "Test: FAILED"

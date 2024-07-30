@@ -2,7 +2,7 @@
 
 struct Foo {
   Foo() {
-    std::cout << "Foo()" << std::endl;
+    std::cout << "foo0" << std::endl;
   }
 };
 
