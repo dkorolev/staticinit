@@ -4,7 +4,7 @@ set -e
 
 if ! make ; then
   echo
-  echo "MAKE FAILED"
+  echo "MAKE FAILED 2"
   echo
   cat CMakeLists.txt
   exit 1
